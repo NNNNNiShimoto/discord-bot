@@ -5,13 +5,16 @@ import matplotlib.pyplot as plt
 import matplotlib.font_manager as fm
 from zoneinfo import ZoneInfo
 from os.path import isfile, isdir
-from os import makedirs
+from os import makedirs, getenv
 from data.names import owner2id
+
+from dotenv import load_dotenv
+load_dotenv()
 
 TIME_FORMAT = '%Y-%m-%d %H:%M:%S'
 STATS_RANGE = 7
-FONT_PATH = '/usr/your/favorite/font/path'
-TIME_ZONE = "Country/City"
+FONT_PATH = getenv('FONT_PATH')
+TIME_ZONE = getenv('TIME_ZONE')
 
 def createMonthJson(path, days):
     eachobj = {

@@ -21,11 +21,6 @@ dotenv 1.0.1
         - dispname: name displayed in the server
 - data/config.json
     - write owner
-- amida.py
-    - font path
-- stats.py
-    - fontpath
-    - timezone
 
 ## Statistics Data Structure
 in data/stats/year_YYY/month_MM.json
