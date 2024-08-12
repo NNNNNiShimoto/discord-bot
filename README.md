@@ -19,10 +19,8 @@ dotenv 1.0.1
         - id: each account discord id
         - owner: if you have two discord accounts, use same owner and you can share your configs, stats, etx
         - dispname: name displayed in the server
-- config.json
+- data/config.json
     - write owner
-- config.py
-    - adjust the maximum number
 - amida.py
     - font path
 - stats.py

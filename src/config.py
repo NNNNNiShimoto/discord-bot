@@ -115,13 +115,13 @@ class NoticeConfig(ExclusiveSelect):
     def __init__(self):
         options = [
             discord.SelectOption(label='Disabled', description='No notification'),
-            discord.SelectOption(label='1person'),
-            discord.SelectOption(label='2persons'),
-            discord.SelectOption(label='3persons'),
-            #need to add　more options if necessary
-            discord.SelectOption(label='EachJoin', description='Deprecated:Notify each time a person joins.'),
+            discord.SelectOption(label='1personJoin')
         ]
-        super().__init__(placeholder="新しい通知を送る人数は?", options=options)
+        options += [discord.SelectOption(label=f'{i+2}peopleJoin') for i in range(len(owner2id)-2)]
+
+        options.append(discord.SelectOption(label='EachJoin', description='Deprecated:Notify each time a person joins.'))
+
+        super().__init__(placeholder="When is the notification sent?", options=options)
 
     async def callback(self, interaction: discord.Interaction):
         if self.values[0]=='Disabled':
