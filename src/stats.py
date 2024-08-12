@@ -113,14 +113,12 @@ def countLog(type: str, owner: str, plus: int):
     
     saveMonthJson(jobj, dt_now.year, dt_now.month)
 
-#TODO: include in main.py
 def postLog(owner: str):
     countLog("post", owner, 1)
 
 def botuseLog(owner: str):
     countLog("botuse", owner, 1)
 
-#TODO: include in main.py
 def reactLog(owner: str):
     countLog("react", owner, 1)
 

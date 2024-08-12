@@ -32,7 +32,6 @@ def readOneConfig(type: str) -> dict:
         return jobj[type]
 
 def writeOneData(type: str, owner: str, data: int|bool):
-    #TODO: refactor here, want to read and write with one open
     with open("data/config.json",'r') as f:
         jobj = json.load(f)
         jobj[type][owner] = data
@@ -41,7 +40,6 @@ def writeOneData(type: str, owner: str, data: int|bool):
         json.dump(jobj, g, indent=4)
 
 def writeOneConfig(type: str, data: dict):
-    #TODO: refactor here, want to read and write with one open
     with open("data/config.json",'r') as f:
         jobj = json.load(f)
         jobj[type] = data

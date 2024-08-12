@@ -1,4 +1,3 @@
-#TODO: enable to add items dinamically in the future
 #id:    each account discord id
 #owner: if you have two discord accounts, use same owner and you can share your configs, stats, etx
 id2owner = {
@@ -7,7 +6,6 @@ id2owner = {
     1111111111111111111: "OWNER_NAME1"
 }
 
-#TODO: enable to add items dinamically in the future
 #owner: if you have two discord accounts, use same owner and you can share your configs, stats, etx
 #id:    each account discord id
 owner2id = {
@@ -20,7 +18,6 @@ owner2id = {
     ]
 }
 
-#TODO: enable to add items dinamically in the future
 #display name: your name in the server
 id2dispname = {
     1234567890123456789: "DISPLAY_NAME0",
@@ -28,7 +25,6 @@ id2dispname = {
     1111111111111111111: "DISPLAY_NAME2"
 }
 
-#TODO: enable to add items dinamically in the future
 #return is_owner_joining_in_voice_chat
 is_join_list = {
     "OWNER_NAME0": False,
