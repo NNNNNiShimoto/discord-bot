@@ -1,0 +1,170 @@
+[
+    {
+        "title": "/help",
+        "desc": "display all commands descriptions",
+        "color": null,
+
+        "author": null,
+        "img": null,
+        "fields" : null
+    },
+    {
+        "title": "/amida",
+        "desc": "create the ladder lottery (amidakuji)",
+        "color": null,
+
+        "author": null,
+        "img": null,
+        "fields" : [
+            {
+                "name": "hit",
+                "value": "the number of hits. if minus value is given, print numbers instead of stars. default is one",
+                "inline" : false
+            },
+            {
+                "name": "list",
+                "value": "list of candidates. You can make the ladder lottery by cutting the sent text with a space delimiter. if nothing is given, display name in the server is used",
+                "inline" : false
+            }
+        ]
+    },
+    {
+        "title": "/d",
+        "desc": "roll the dice",
+        "color": null,
+
+        "author": null,
+        "img": null,
+        "fields" : [
+            {
+                "name": "xdy",
+                "value": "roll y dice that yield a maximum of x. exp) 3d6 means that roll three 6-sided dice.",
+                "inline" : false
+            }
+        ]
+    },
+    {
+        "title": "/rps",
+        "desc": "play rock-paper-scissors game with the CPU",
+        "color": null,
+
+        "author": null,
+        "img": null,
+        "fields" : [
+            {
+                "name": "bon",
+                "value": "indicates how many runs first to win. default is 1",
+                "inline" : false
+            }
+        ]
+    },
+    {
+        "title": "/mrps",
+        "desc": "play rock-paper-scissors game with friends",
+        "color": null,
+
+        "author": null,
+        "img": null,
+        "fields" : [
+            {
+                "name": "bon",
+                "value": "indicates how many runs first to win. default is 1.",
+                "inline" : false
+            },
+            {
+                "name": "pl",
+                "value": "indicates the number of participants. default is 2.",
+                "inline" : false
+            }
+        ]
+    },
+    {
+        "title": "/stats",
+        "desc": "create a graph showing how many VC one user has participated in the last week.",
+        "color": null,
+
+        "author": null,
+        "img": null,
+        "fields" : [
+            {
+                "name": "member",
+                "value": "indicates the user. default is command user.",
+                "inline" : false
+            }
+        ]
+    },
+    {
+        "title": "/astat",
+        "desc": "create a graph showing how mamy people has participated in VC in one night",
+        "color": null,
+
+        "author": null,
+        "img": null,
+        "fields" : [
+            {
+                "name": "year",
+                "value": "indicates the night's year. default is this year.",
+                "inline" : false
+            },
+            {
+                "name": "month",
+                "value": "indicates the night's month. default is this month",
+                "inline" : false
+            },
+            {
+                "name": "day",
+                "value": "indicates the night's day. default is today",
+                "inline" : false
+            }
+        ]
+    },
+    {
+        "title": "/sudo",
+        "desc": "execute commands that require administrative privileges",
+        "color": null,
+
+        "author": null,
+        "img": null,
+        "fields" : [
+            {
+                "name": "command",
+                "value": "shutdown: shut down the bot",
+                "inline" : false
+            }
+        ]
+    },
+    {
+        "title": "/config",
+        "desc": "open the settings menu",
+        "color": null,
+
+        "author": null,
+        "img": null,
+        "fields" : null
+    },
+    {
+        "title": "/calend",
+        "desc": "create the login stamp",
+        "color": null,
+
+        "author": null,
+        "img": null,
+        "fields" : [
+            {
+                "name": "member",
+                "value": "indicates whose information is referenced. default is the command user.",
+                "inline" : false
+            },
+            {
+                "name": "year",
+                "value": "indicates the calendar's year. default is this year.",
+                "inline" : false
+            },
+            {
+                "name": "month",
+                "value": "indicates the calendar's month. default is this month.",
+                "inline" : false
+            }
+        ]
+    }
+]

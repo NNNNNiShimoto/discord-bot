@@ -1,0 +1,59 @@
+[
+    {
+        "title": "TITLE",
+        "desc": "Write description here. You can use new line or markdown style. For example,\n# THE BIG LETTER",
+        "color": "Write color code here, like 0xffffff. If not necessary, write null instead of str",
+
+        "author": "Write author here. If not necessary, write null instead of str",
+        "img": 
+            {
+                "path": "img/YOUR/LOCAL/PATH/TO/IMAGE (Only one of path and url at this time.)",
+                "url": null
+            },
+        "fields" : [
+            {
+                "name": "field1",
+                "value": "You can use value as description. Also, you can use here as int like field2",
+                "inline" : false
+            },
+            {
+                "name": "field2",
+                "value": 42,
+                "inline" : false
+            }
+        ]
+    },
+    {
+        "title": "TITLE2",
+        "desc": "Explaination",
+        "color": null,
+
+        "author": null,
+        "img": 
+        {
+            "path": null,
+            "url": "https://URL/TO/THE/IMAGE/ON/THE/INTERNET"
+        },
+        "fields" : [
+            {
+                "name": "field3",
+                "value": 40000000000,
+                "inline" : true
+            },
+            {
+                "name": "field4",
+                "value": 40000000000,
+                "inline" : true
+            }
+        ]
+    },
+    {
+        "title": "MINIMUM EXAMPLE",
+        "desc": "title and desc is necessary. others can be omitted",
+        "color": null,
+
+        "author": null,
+        "img": null,
+        "fields" : null
+    }
+]

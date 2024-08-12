@@ -1,0 +1,14 @@
+{
+    "notice": {
+        "OWNER_NAME0": 0,
+        "OWNER_NAME1": 0
+    },
+    "is_noticed": {
+        "OWNER_NAME0": false,
+        "OWNER_NAME1": false
+    },
+    "device_id": {
+        "OWNER_NAME0": null,
+        "OWNER_NAME1": null
+    }
+}
