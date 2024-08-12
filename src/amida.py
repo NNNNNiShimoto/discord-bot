@@ -3,9 +3,12 @@ from PIL import ImageDraw
 from PIL import ImageFont
 import numpy as np
 import random
+import os
 
-FONT_PATH = "/usr/your/font/path/ver1"
-FONT_PATH2 = "/usr/your/font/path/ver2"
+from dotenv import load_dotenv
+load_dotenv()
+
+FONT_PATH = os.getenv('FONT_PATH')
 
 COLOR_CONFIG = [
     {
@@ -31,7 +34,7 @@ COLOR_CONFIG = [
         'baseColor': (0, 115, 86),
         'lineColor': 255,
         'fontColor': (255, 255, 255),
-        'fontPath': FONT_PATH2,
+        'fontPath': FONT_PATH,
         'colorList': [
             (255, 255, 255)
         ],
